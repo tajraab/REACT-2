@@ -1,13 +1,13 @@
 import React from "react";
-import "./card.css";
-function Card() {
+import "../App.css";
+function Card(props) {
   return (
     <div className="card">
-      <h1>Tajra Bacevac</h1>
-      <h1>31.01.2006</h1>
-      <h1>Gimnazija</h1>
-      <h1>Instagram</h1>
-      <h1>Github</h1>
+      <h1>{props.ime}</h1>
+      <h1>{props.datum}</h1>
+      <h1>{props.godiste}</h1>
+      <h1>{props.skola}</h1>
+      <h1></h1>
     </div>
   );
 }

@@ -5,4 +5,7 @@
   border: 1 px solid gray;
   border-radius: 8px;
   text-align: center;
+  border-radius: 5px solid black;
+  color: palevioletred;
+  border: black;
 }
