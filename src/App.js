@@ -41,16 +41,30 @@ function App() {
 
   //////////////////////////
 
-  const [myNumber, setMojBroj] = useState(3);
+  // const [myNumber, setMojBroj] = useState(3);
+  // return (
+  //   <div className="container">
+  //     {myNumber}
+  //     <button
+  //       onClick={() => {
+  //         setMojBroj((prev) => prev - 5);
+  //         // console.log(myNumber);
+  //       }}
+  //     ></button>
+  //   </div>
+  // );
+
+  /////////////////////////input/////////////////////////////////////////////////////////
+  const [inputValue, setInputValue] = useState("");
+  const [djak, setDjak] = useState("Cao,Mehmed");
   return (
     <div className="container">
-      {myNumber}
-      <button
-        onClick={() => {
-          setMojBroj((prev) => prev - 5);
-          // console.log(myNumber);
-        }}
-      ></button>
+      <input
+        //type="text"
+        onChange={(e) => setDjak(e.target.value)}
+        value={djak}
+      />
+      <button onClick={() => alert(`Cao ${djak}`)}>Hello</button>
     </div>
   );
 }
