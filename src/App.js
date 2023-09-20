@@ -55,16 +55,33 @@ function App() {
   // );
 
   /////////////////////////input/////////////////////////////////////////////////////////
-  const [inputValue, setInputValue] = useState("");
-  const [djak, setDjak] = useState("Cao,Mehmed");
+
+  // const [inputValue, setInputValue] = useState("");
+  // const [djak, setDjak] = useState("Cao,Mehmed");
+  // return (
+  //   <div className="container">
+  //     <input
+  //       //type="text"
+  //       onChange={(e) => setDjak(e.target.value)}
+  //       value={djak}
+  //     />
+  //     <button onClick={() => alert(`Cao ${djak}`)}>Hello</button>
+  //   </div>
+  // );
+
+  const [brojevi, setBroj] = useState([12, 6, 35, 15, 21, 56, 82, 10]);
+  const [noviBroj, setNoviBroj] = useState(undefined);
+  console.log(brojevi);
   return (
     <div className="container">
       <input
-        //type="text"
-        onChange={(e) => setDjak(e.target.value)}
-        value={djak}
+        placeholder="Dodaj broj"
+        value={noviBroj}
+        onChange={(e) => setNoviBroj(e.target.value)}
       />
-      <button onClick={() => alert(`Cao ${djak}`)}>Hello</button>
+      <button onClick={() => setBroj((prev) => [...prev, noviBroj])}>
+        Dodaj broj
+      </button>
     </div>
   );
 }
