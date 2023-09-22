@@ -90,41 +90,45 @@ function App() {
   //   </div>
   // );
 
-  /////////////////////////////////////////////////////////////////
+  //////////////domaci,forma,input///////////////////////////////////////////////////
 
-  const Create = () => {
-    const [title, setTitle] = useState("");
-    const [body, setBody] = useState("");
-    const [author, setAuthor] = useState("");
-    return (
-      <div className="create">
-        <h2>Add a new blog</h2>
-        <form>
-          <label>Tajra Bacevac:</label>
-          <input
-            type="text"
-            required
-            value={title}
-            onChange={(e) => setTitle(e.target.value)}
-          />
-          <label>School:</label>
-          <textarea
-            required
-            value={body}
-            onChange={(e) => setBody(e.target.value)}
-          ></textarea>
-          <label>Years:</label>
-          <select value={author} onChange={(e) => setAuthor(e.target.value)}>
-            <option value="mario">mario</option>
-            <option value="yoshi"></option>
-          </select>
+  // const [title, setTitle] = useState("");
+  // const [body, setBody] = useState("");
+  // const [author, setAuthor] = useState("");
+  // return (
+  //   <div className="create">
+  //     <h2>Add a new blog</h2>
+  //     <form>
+  //       <label>Tajra Bacevac:</label>
+  //       <input
+  //         type="text"
+  //         required
+  //         value={title}
+  //         onChange={(e) => setTitle(e.target.value)}
+  //       />
+  //       <label>School:</label>
+  //       <textarea
+  //         required
+  //         value={body}
+  //         onChange={(e) => setBody(e.target.value)}
+  //       ></textarea>
+  //       <label>Years:</label>
+  //       <select value={author} onChange={(e) => setAuthor(e.target.value)}>
+  //         <option value="mario">17 GODINA</option>
+  //         <option value="yoshi"></option>
+  //       </select>
 
-          <button>Add Blog</button>
-          <p>{title}</p>
-          <p>{body}</p>
-        </form>
-      </div>
-    );
-  };
+  //       <button>Add Blog</button>
+  //       <p>{title}</p>
+  //       <p>{body}</p>
+  //     </form>
+  //   </div>
+  // );
+
+  //////////////////////////////////////////////////////////////////////////////////
+  //////////////
+  //const handleInput=(event)=>{setUser({})
+  // e=>
+  //}
 }
 export default App;
