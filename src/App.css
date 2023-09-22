@@ -1,4 +1,4 @@
-.card {
+/* .card {
   min-height: 300px;
   width: 350px;
   background-color: whitesmoke;
@@ -8,4 +8,34 @@
   border-radius: 5px solid black;
   color: palevioletred;
   border: black;
+} */
+.create {
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+.create label {
+  text-align: left;
+  display: block;
+}
+.create h2 {
+  font-size: 20px;
+  color: aqua;
+  margin-bottom: 30px;
+}
+.create input,
+.create textarea,
+.create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid red;
+  box-sizing: border-box;
+  display: block;
+}
+.create button {
+  background-color: pink;
+  color: azure;
+  padding: 8px;
+  border-radius: 8px;
 }
