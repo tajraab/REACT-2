@@ -9,7 +9,7 @@
   color: palevioletred;
   border: black;
 } */
-.create {
+/* .create {
   max-width: 300px;
   margin: 0 auto;
   text-align: center;
@@ -38,4 +38,25 @@
   color: azure;
   padding: 8px;
   border-radius: 8px;
+} */
+.main {
+  color: yellow;
+  width: 400px;
+  height: 500px;
+  display: block;
+  text-align: center;
+  padding: 6px 10px;
+  margin: 20px 0;
+  background-color: pink;
+}
+.input {
+  background-color: whitesmoke;
+  width: 200px;
+  height: 40px;
+  font-size: medium;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: black;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
 }
