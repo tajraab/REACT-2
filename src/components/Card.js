@@ -1,14 +1,10 @@
-import React from "react";
-import "../App.css";
-function Card(props) {
+// import React from "react";
+// import "../App.css";
+export default function App({ name, isBought }) {
   return (
-    <div className="card">
-      <h1>{props.ime}</h1>
-      <h1>{props.datum}</h1>
-      <h1>{props.godiste}</h1>
-      <h1>{props.skola}</h1>
-      <h1></h1>
-    </div>
+    <li>
+      {name}
+      {isBought ? "true" : "false"}
+    </li>
   );
 }
-export default Card;
