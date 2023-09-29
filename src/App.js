@@ -2,7 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import Card from "./components/Card";
 import { useState } from "react";
-import SestiCas from "./components/SestiCas/SestiCas";
+import SestiCas from "./components/sestiCas/SestiCas";
 function App() {
   <SestiCas />;
   // const odeljenje = [
