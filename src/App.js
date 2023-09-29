@@ -2,7 +2,9 @@ import logo from "./logo.svg";
 import "./App.css";
 import Card from "./components/Card";
 import { useState } from "react";
-// function App() {
+import SestiCas from "./components/SestiCas/SestiCas";
+function App() {
+  <SestiCas />;
   // const odeljenje = [
   //   { ime: "Tajra", datum: "31.01", godiste: 2006, skola: "Gimnazija" },
   //   { ime: "Tajra", datum: "31.01", godiste: "2006", skola: "Gimnazija" },
@@ -183,29 +185,29 @@ import { useState } from "react";
   //     </div>
   //   );
 
+  /////////////////////////////////////////////////////////////////////////////////////
+  // const products=[
+  //   {name:"Cips",isBought:false},
+  //   {name:"Kola",isBought:true},
+  //   {name:"Nesto trece",isBought:true}
+  // ];
+  // function App(){
+  //   return(
+  //     <div className="App">
+  //       <header className="App-header">
+  //         <p>Stvari za kupovinu</p>
+  //         <ul>
+  //           {products.map((el)
+  //           =>(
+  //            < Item name={el.name}isBought={el.isBought}/>
+  //           ) )
+  //             }
+  //         </ul>
+  //       </header>
+  //     </div>
+  // )
 
-/////////////////////////////////////////////////////////////////////////////////////
-const products=[
-  {name:"Cips",isBought:false},
-  {name:"Kola",isBought:true},
-  {name:"Nesto trece",isBought:true}
-];
-function App(){
-  return(
-    <div className="App">
-      <header className="App-header">
-        <p>Stvari za kupovinu</p>
-        <ul>
-          {products.map((el)
-          =>(
-           < Item name={el.name}isBought={el.isBought}/>
-          ) )
-            }
-        </ul>
-      </header>
-    </div>
-  )
+  /////////////////////////////////////////////////////////////////////////////
 }
 
- 
 export default App;
