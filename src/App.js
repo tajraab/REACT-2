@@ -4,7 +4,7 @@ import Card from "./components/Card";
 import { useState } from "react";
 import SestiCas from "./components/sestiCas/SestiCas";
 function App() {
-  <SestiCas />;
+  <DrugiDomaci />;
   // const odeljenje = [
   //   { ime: "Tajra", datum: "31.01", godiste: 2006, skola: "Gimnazija" },
   //   { ime: "Tajra", datum: "31.01", godiste: "2006", skola: "Gimnazija" },
