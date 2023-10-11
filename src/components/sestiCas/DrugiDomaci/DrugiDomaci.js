@@ -29,11 +29,10 @@ function DrugiDomaci() {
         {/*<KarticaDomaci/>
         <KarticaDomaci/>*/}
         {data.map((product) => (
-          //
           // <KarticaDomaci
-          //title={product.title}
-          //brand={product.brand}
-          //category={product.category}
+          // title={product.title}
+          // brand={product.brand}
+          // category={product.category}
           // description={product.descriprtion
 
           <KarticaDomaci product={product} key={product.id} />
