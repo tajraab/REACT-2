@@ -1,9 +1,9 @@
 import React from "react";
 import { useState } from "react";
 // import SestiCas from "./components/sestiCas/SestiCas";
-import Product from "./Product";
+// import Product from "./Product";
 function SestiCas() {
-  <Product />;
+  // <Product />;
   // const [randomNumber, setRandomNumber] = useState(12);
   // const [products, setProducts] = useState([
   //   { name: "Adidas", price: 120, inCart: false },

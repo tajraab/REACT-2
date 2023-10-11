@@ -3,7 +3,7 @@ import "./App.css";
 import Card from "./components/Card";
 import { useState } from "react";
 import SestiCas from "./components/sestiCas/SestiCas";
-function App() {
+function DrugiDomaci() {
   <DrugiDomaci />;
   // const odeljenje = [
   //   { ime: "Tajra", datum: "31.01", godiste: 2006, skola: "Gimnazija" },
@@ -210,4 +210,4 @@ function App() {
   /////////////////////////////////////////////////////////////////////////////
 }
 
-export default App;
+export default DrugiDomaci;

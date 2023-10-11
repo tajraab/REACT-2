@@ -1,19 +1,27 @@
 import React, { useEffect, useState } from "react";
 import KarticaDomaci from "./KarticaDomaci";
+import axios from "axios";
 import "/style.css";
 function DrugiDomaci() {
   const [data, setData] = useState([]);
   const [search, setSearch] = useState("");
-  const getData = () => {
-    fetch(`https://dummyjson.com/products/search?q=${search}`)
-      .then((res) => res.json())
-      .then((products) => setData(products.products));
+  const BASE_URL = "https://dummyjson.com/products";
+  // const getData = () => {
+  //   fetch(`https://dummyjson.com/products/search?q=${search}`)
+  //     .then((res) => res.json())
+  //     .then((products) => setData(products.products));
+  // };
+  const getData2 = () => {
+    axios
+      .get(`${BASE_URL}/search?q=${search}`)
+      .then((res) => setData(res.data.products));
   };
   useEffect(() => {
-    getData();
+    //   getData();
+    getData2();
   }, []);
-  console.log(data, "DATTA");
-  console.log(search, "SEARCH");
+  // console.log(data, "DATTA");
+  // console.log(search, "SEARCH");
   return (
     <div className="container">
       <div className="searchWrapper">
