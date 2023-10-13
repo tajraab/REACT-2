@@ -2,9 +2,12 @@ import logo from "./logo.svg";
 import "./App.css";
 import Card from "./components/Card";
 import { useState } from "react";
-import SestiCas from "./components/sestiCas/SestiCas";
-function DrugiDomaci() {
-  <DrugiDomaci />;
+// import SestiCas from "./components/sestiCas/SestiCas";
+// import DrugiDomaci from "./components/sestiCas/DrugiDomaci/DrugiDomaci";
+import SedmiCas from "./components/SedmiCas";
+function App() {
+  // return <DrugiDomaci />;
+  return <SedmiCas />;
   // const odeljenje = [
   //   { ime: "Tajra", datum: "31.01", godiste: 2006, skola: "Gimnazija" },
   //   { ime: "Tajra", datum: "31.01", godiste: "2006", skola: "Gimnazija" },
@@ -210,4 +213,4 @@ function DrugiDomaci() {
   /////////////////////////////////////////////////////////////////////////////
 }
 
-export default DrugiDomaci;
+export default App;
