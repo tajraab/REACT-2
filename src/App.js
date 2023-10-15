@@ -4,7 +4,7 @@ import Card from "./components/Card";
 import { useState } from "react";
 // import SestiCas from "./components/sestiCas/SestiCas";
 // import DrugiDomaci from "./components/sestiCas/DrugiDomaci/DrugiDomaci";
-import SedmiCas from "./components/SedmiCas";
+import SedmiCas from "./components/SedmiCas/SedmiCas";
 function App() {
   // return <DrugiDomaci />;
   return <SedmiCas />;
