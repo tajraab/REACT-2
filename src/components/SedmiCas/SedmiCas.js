@@ -5,7 +5,7 @@ function SedmiCas() {
   const [defaultData, setDefaultData] = useState([]);
   useEffect(() => {
     fetch(
-      "https://dummyjson.com/posts?limit=10&skip=10&select=title,reactions,userId"
+      "https://dummyjson.com/posts?limit=60&skip=30&select=title,reactions,userId"
     )
       .then((res) => res.json())
       .then((data) => {
@@ -13,7 +13,7 @@ function SedmiCas() {
         console.log(data);
       });
     console.log(defaultData);
-  });
+  }, []);
   return (
     <div className="domaci">
       {defaultData?.length > 0 ? (
@@ -21,7 +21,6 @@ function SedmiCas() {
       ) : (
         <h1>Nema podataka</h1>
       )}
-      <div className="lista"></div>
     </div>
   );
 }
