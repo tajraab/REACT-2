@@ -24,5 +24,6 @@ function SedmiCas() {
     </div>
   );
 }
+//obnavljanje domaceg zadatka (prev-1);pagination
 
 export default SedmiCas;
