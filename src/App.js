@@ -7,14 +7,15 @@ import { useState } from "react";
 // import SedmiCas from "./components/SedmiCas/SedmiCas";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
 
 function App() {
   return (
     <div className="container">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<HomePage />}></Route>
-          <Route path="/about" element={<h1>This is about us PAGE</h1>}></Route>
+          <Route path="/home" element={<HomePage />}></Route>
+          <Route path="/about" element={<AboutPage />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
