@@ -13,7 +13,7 @@ function SedmiCas() {
         console.log(data);
       });
     console.log(defaultData);
-  }, []);
+  }, [paginacija]);
   const handlePaginacijaClick = (page) => {
     setDefaultData(page);
   };
