@@ -1,10 +1,11 @@
 import react from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 function HomePage() {
+  const navigate = useNavigate();
   return (
     <div>
       <h1>this is HOME PAGE</h1>
-      <Link to={"/about"}>IDI NA ABOUT PAGE</Link>
+      <button onClick={() => navigate("/about")}>ABOUT</button>
     </div>
   );
 }
