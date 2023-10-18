@@ -11,8 +11,9 @@ button:hover {
 .postt {
   width: 200px;
   height: 200pxpx;
-  background-color: blueviolet;
+  background-color: pink;
   color: white;
+  border-radius: 4px white solid;
   justify-content: center;
   display: block;
   font-size: 12px;

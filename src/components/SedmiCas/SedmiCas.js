@@ -3,10 +3,9 @@ import "./style.css";
 import Postovi from "./Postovi";
 function SedmiCas() {
   const [defaultData, setDefaultData] = useState([]);
+  const [paginacija, setPaginacija] = useState(0);
   useEffect(() => {
-    fetch(
-      "https://dummyjson.com/posts?limit=60&skip=30&select=title,reactions,userId"
-    )
+    fetch(`https://dummyjson.com/posts?skip=${paginacija}`)
       .then((res) => res.json())
       .then((data) => {
         setDefaultData(data?.posts);
