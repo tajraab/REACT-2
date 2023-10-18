@@ -4,10 +4,23 @@ import Card from "./components/Card";
 import { useState } from "react";
 // import SestiCas from "./components/sestiCas/SestiCas";
 // import DrugiDomaci from "./components/sestiCas/DrugiDomaci/DrugiDomaci";
-import SedmiCas from "./components/SedmiCas/SedmiCas";
+// import SedmiCas from "./components/SedmiCas/SedmiCas";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+
 function App() {
+  return (
+    <div className="container">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage />}></Route>
+          <Route path="/about" element={<h1>This is about us PAGE</h1>}></Route>
+        </Routes>
+      </BrowserRouter>
+    </div>
+  );
   // return <DrugiDomaci />;
-  return <SedmiCas />;
+  // return <SedmiCas />;
   // const odeljenje = [
   //   { ime: "Tajra", datum: "31.01", godiste: 2006, skola: "Gimnazija" },
   //   { ime: "Tajra", datum: "31.01", godiste: "2006", skola: "Gimnazija" },
