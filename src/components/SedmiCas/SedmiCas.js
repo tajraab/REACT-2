@@ -14,13 +14,27 @@ function SedmiCas() {
       });
     console.log(defaultData);
   }, []);
+  const handlePaginacijaClick = (page) => {
+    setDefaultData(page);
+  };
   return (
-    <div className="domaci">
+    <div className="paginacija">
       {defaultData?.length > 0 ? (
         defaultData?.map((posts) => <Postovi posts={posts} />)
       ) : (
         <h1>Nema podataka</h1>
       )}
+      <div className="pagination">
+        {[1, 2, 3, 4, 5].map((page) => (
+          <button
+            key={page}
+            className={paginacija === page - 1 ? "active" : ""}
+            onClick={() => handlePaginacijaClick(page - 1)}
+          >
+            {page}
+          </button>
+        ))}
+      </div>
     </div>
   );
 }
